@@ -5,19 +5,17 @@ import React from "react";
 class HornedBeast extends React.Component {
 
   constructor(props) {
-    // we are passing the props object as an argument to our parent React Component Class 
+
     super(props)
 
-    // a react standard of saving information related to the class component
-    // we call those information as states (conditions) to describe the state/ condition of the component.
     this.state = {
-        childName: this.props.name,
+       
         vote: 0
     }
 }
 
 requestVote = () => {
-    // the request money child function will be invoking or calling the passed giveMoney function from the parent component
+ 
     this.props.giveVote();
     let tempValue = this.state.vote;
     this.setState({
