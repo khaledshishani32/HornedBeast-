@@ -1,7 +1,7 @@
 import React from "react";
 
 import HornedBeast from "./HornedBeast";
-import Data from "./Data.json";
+
 
 
 class Main extends React.Component {
@@ -19,8 +19,8 @@ class Main extends React.Component {
            vote: this.state.vote
         })
     }
-
-
+   
+    
 
 
     render() {
@@ -29,7 +29,7 @@ class Main extends React.Component {
         return (
             <div>
                 {
-                    Data.map((value) => {
+                    this.props.Data.map((value) => {
                         return (
                             <div>
 
@@ -39,6 +39,7 @@ class Main extends React.Component {
                                     giveVote={this.giveVote}
                                     img={value.image_url}
                                     description={value.description}
+                                    displayModal={this.props.displayModal}
 
                                 />
                             </div>
