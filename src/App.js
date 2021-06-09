@@ -37,7 +37,7 @@ class App extends React.Component {
         return (
           <div >
            <Header />
-           <userForm />
+           
            <Main 
                Data={Data}
                displayModal={this.displayModal}
