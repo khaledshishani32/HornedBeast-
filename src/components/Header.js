@@ -4,22 +4,17 @@ import Nav from 'react-bootstrap/Nav';
 class Header extends React.Component {
     render() {
         return (
-            // <div>
-            //     <header>
-            //         <h1>Gallery Of Horns</h1>
-            //     </header>
-            // </div>
-
+           
             <div>
                 <Nav className="justify-content-center"
                     activeKey="/home"
                     onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-                >
+                  bg="red">
 
 
                     <Nav.Item>
                         <Nav.Link eventKey="disabled" disabled>
-                            Disabled
+                        Gallery Of Horns
                   </Nav.Link>
                     </Nav.Item>
                 </Nav>

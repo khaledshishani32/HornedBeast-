@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import SelectedBeast from "./components/SelectedBeast";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import userForm from "./components/userForm"
+
 
 
 
@@ -35,6 +37,7 @@ class App extends React.Component {
         return (
           <div >
            <Header />
+           
            <Main 
                Data={Data}
                displayModal={this.displayModal}
