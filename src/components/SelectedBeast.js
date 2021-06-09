@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button'
 
 
 export class SelectedBeast extends Component {
+    
     render() {
         return (
             <Modal show={this.props.show}>
@@ -27,7 +28,7 @@ export class SelectedBeast extends Component {
                 </Modal.Body>
 
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={this.displayModal}>Close</Button>
+                    <Button variant="secondary" onClick={this.props.displayModal}>Close</Button>
                    
                 </Modal.Footer>
             </Modal>
